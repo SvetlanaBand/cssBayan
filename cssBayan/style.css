@@ -7,7 +7,7 @@ ul li {
     list-style: none;
 }
 img {
-    vertical-align: top;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -62,7 +62,7 @@ span {
 
 .bayan__table-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.3em 0;
     border: 0.15em solid #cccccc;
@@ -83,7 +83,7 @@ span {
 }
 .bayan__table-input:checked + .bayan__table-title > img {
     display: block;
-    max-height: 19rem;
+    max-height: 18rem;
     margin: 0 auto;
     margin-bottom: 1.4rem;
     transition: all 0.8s ease-in-out;
@@ -140,7 +140,7 @@ input[type="radio" i]{
         font-size: 1.4em;
     }
     .bayan__table-input:checked + .bayan__table-title > img {
-        max-height: 10.75rem;
+        max-width: 70%;
         margin-bottom: 1.25rem;
     }
 }
