@@ -1,0 +1,146 @@
+html,
+body {
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+img {
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 217, 217);
+}
+
+
+.bayan {
+    flex: 1 1 auto;
+}
+
+.bayan__container {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+.bayan__title {
+    padding: 3rem 0 1.5rem;
+}
+
+.accordion__tabs {
+    min-width: 50%;
+}
+
+.bayan__table:hover p {
+    color: #090909;
+    transition: all 0.8s ease-in-out;
+}
+
+.bayan__table-title {
+    background: #b8b8b4;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #981b8e;
+}
+
+span {
+    color: #090909;
+    opacity: 0;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.bayan__img {
+    display: block;
+}
+
+.bayan__table-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em 0;
+    border: 0.15em solid #cccccc;
+    background: #fbfbf9;
+    text-align: center;
+}
+
+.bayan__table-title:hover {
+    color: #090909;
+    cursor: pointer;
+}
+
+.bayan__table-input + .bayan__table-title > img {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.bayan__table-input:checked + .bayan__table-title > img {
+    display: block;
+    max-height: 18rem;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    transition: all 0.8s ease-in-out;
+    transform: rotate(360deg);
+}
+.bayan__table-item:hover .bayan__img {
+    max-height: 18rem;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    transition: all 0.6s;
+    transform: rotate(-360deg);
+}
+.bayan__table-input:checked + .bayan__table-title p {
+    color: #090909;
+}
+.bayan__table-title:active .bayan__table-item span,
+.bayan__table-title:active .bayan__table-item p,
+.bayan__table-title:active .bayan__img {
+    filter: opacity(0.6);
+    color: #5e1149;
+}
+
+.bayan__table-input:checked + .bayan__table-title span {
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+}
+.bayan__table-input:hover + .bayan__table-title span {
+    opacity: 1;
+    transform: rotate(135deg);
+    transition: all 0.3s ease;
+}
+.bayan__table:hover .bayan__table-title span {
+    opacity: 1;
+}
+input[type="radio" i]{
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 320px) {
+    .bayan__container {
+        max-width: 80vw;
+        padding: 0 1.1rem;
+    }
+    .bayan__title {
+        font-size: 1.3em;
+        padding: 1rem 0;
+    }
+    .bayan__table-title {
+        font-size: 0.8em;
+    }
+    span {
+        font-size: 1.4em;
+    }
+    .bayan__table-input:checked + .bayan__table-title > img {
+        max-width: 70%;
+        margin-bottom: 1.25rem;
+    }
+}
